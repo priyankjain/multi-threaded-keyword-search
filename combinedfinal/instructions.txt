@@ -1,0 +1,4 @@
+1. Compile ks_bb.c using:
+gcc -pthread ks_bb.c -o ks_bb
+2. Run ks_bb using:
+./ks_bb commandFile bufSize
