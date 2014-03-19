@@ -299,11 +299,11 @@ int main(int argc, char *argv[])
         // sprintf(childline, "I am child number %d\n", line_no);
         // write(fd[1], childline, strlen(childline));
         // //child process
-        // char* cmd=(char*)malloc(sizeof(char)*(12+length+20)); 
+        char* cmd=(char*)malloc(sizeof(char)*(12+length+20)); 
         //  char cwd[1024];
         //  getcwd(cwd,sizeof(cwd));
         //  strcat(cwd,"/child");
-        char* argv[4];
+        char* argv[6];
         argv[0]="child";
         argv[1]=pathToDir;
         argv[2]=keyword;
@@ -315,13 +315,19 @@ int main(int argc, char *argv[])
         // strcpy(buff_child,itoa(buffSize));
         argv[3]=line;
         argv[4]=buff_child;
-        argv[5]=(char*)NULL;
         // printf("%s\n",cwd);
-        // sprintf(cmd,"./child.sh %s %s %d %d &",pathToDir,keyword,line_no,buffSize);
-        // system(cmd);
+        int temp_len=strlen(pathToDir);
+        sprintf(cmd,"child %s/ %s %d %d &",pathToDir,keyword,line_no,buffSize);
+         // system(cmd);
+        //execlp(argv[0],argv[0],argv[1],argv[2],argv[3],argv[4],NULL);
+        printf("%s %d\n",keyword,strlen(keyword));
+        system(cmd);
+        free(cmd);
+         free(pathToDir);
+        free(keyword);
         // // printf("This child");
         // mainChild(4,argv);
-        // free(cmd);
+         // free(cmd);
         // //childProc(pathToDir,keyword,line_no);
         // (void)execl("child.c",argv[0],argv[1],argv[2],argv[3],NULL);
         // execlp(argv[0],argv[0],argv[1],argv[2],argv[3],argv[4],NULL);
@@ -329,77 +335,8 @@ int main(int argc, char *argv[])
         // mainChild(pathToDir,keyword,line_no);
         
         // hello();
-                                  // execv("exit",NULL);
-                                   struct global this;
-                            this.running_threads=0;
-                            printf("Entered child");
-                            this.pathToDir=argv[1];
-                            this.keyword=argv[2];
-                            this.line_no=atoi(argv[3]);
-                            buffSize=atoi(argv[4]);
-                            int i;
-                            newBuffer(this);
-                            if (pthread_mutex_init(&this.buffer_lock, NULL) != 0)
-                            {
-                                printf("Lock init failed, line number: %d",this.line_no);
-                                return;
-                            }
-                            if (pthread_mutex_init(&this.bufferFront_lock, NULL) != 0)
-                            {
-                                printf("Lock init failed, line number: %d",this.line_no);
-                                return;
-                            }
-                            if (pthread_mutex_init(&this.bufferEnd_lock, NULL) != 0)
-                            {
-                                printf("Lock init failed, line number: %d",this.line_no);
-                                return;
-                            }
-                            struct dirent *de=NULL;
-                            DIR *d=NULL;
-                            d=opendir(this.pathToDir);
-                            if(d == NULL)
-                            {
-                              printf("Couldn't open directory, line number: %d",this.line_no);
-                              return;
-                            }
-                            char a;
-                            pthread_t tid;
-                            pthread_attr_t attr;
-                            
-                            pthread_t worker_tid;
-                            // Loop while not NULL
-                            while(de = readdir(d))
-                            {
 
-                              if(de->d_name[0]=='.')
-                                continue;
-                              else
-                              {
-                                char* filename=(char*)malloc(sizeof(char)*MAXLINESIZE);
-                                strcpy(filename,de->d_name);
-                                char c;
-                                pthread_mutex_lock(&this.running_mutex);
-                                this.running_threads++;
-                                pthread_mutex_unlock(&this.running_mutex);
-                                struct for_thread args;
-                                args.filename=filename;
-                                args.this=this;
-                                pthread_attr_init(&attr);
-                                pthread_create(&tid,&attr,worker,&args);
-                              }
-                            }
-                            pthread_attr_init(&attr);
-                            pthread_create(&tid,&attr,printer,&this);
-                            while (this.running_threads > 0)
-                            {
-                              sleep(1);
-                            }
-                            pthread_join(tid,NULL);
-                            destroyBuffer(this);  
-                            closedir(d);
-                            pthread_mutex_destroy(&this.buffer_lock);                            
-                            pthread_mutex_destroy(&this.bufferFront_lock);
-                            pthread_mutex_destroy(&this.bufferEnd_lock);
+                             
         exit(0);
       }
       else
@@ -408,19 +345,19 @@ int main(int argc, char *argv[])
         // close(fd[1]);
                //parent process
         // join(pid);
-        // free(pathToDir);
-        // free(keyword);
+        free(pathToDir);
+        free(keyword);
         line_no++;
       }
     }
   }
-  printf("Now waiting\n");
+  // printf("Now waiting\n");
   for(i=0;i<line_no;i++)
     {
-      printf("wait: %d\n",i);
+      // printf("wait: %d\n",i);
         wait();
       }
-  printf("done waiting\n");
+  // printf("done waiting\n");
   free(commandFileLine);
   fclose(commandFile);
   return(0);
