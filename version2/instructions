@@ -1,0 +1,8 @@
+1. Compile child.c using:
+gcc -pthread child.c -o child
+2. Put child executable in your PATH, for this place child in /bin/ using:
+sudo cp child /bin/
+3. Compile ks_bb.c using:
+gcc -pthread ks_bb.c -o ks_bb
+4. Run ks_bb using:
+./ks_bb commandFile bufSize
