@@ -160,6 +160,14 @@ int main(int argc,char* argv[])
   buffSize=atoi(argv[4]);
   int i;
   newBuffer();
+  int path_len=strlen(pathToDir);
+  if(pathToDir[path_len-1]!='/')
+  {
+    char* newpath=malloc(sizeof(char)*(path_len+1));
+    strcpy(newpath,pathToDir);
+    strcat(newpath,"/");
+    pathToDir=newpath;
+  }
   if (pthread_mutex_init(&buffer_lock, NULL) != 0)
   {
       printf("Lock init failed, line number: %d",line_no);

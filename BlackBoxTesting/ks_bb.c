@@ -263,9 +263,8 @@ int main(int argc, char *argv[])
       commandFileLine[i]=c;
       i++;
     }
-
+    commandFileLine[i]='\0';
     length=i;
-
     if(lastspace>=length || lastspace==0)
     {
       printf("Invalid command line, line number: %d",line_no);
@@ -320,7 +319,7 @@ int main(int argc, char *argv[])
         sprintf(cmd,"child %s/ %s %d %d &",pathToDir,keyword,line_no,buffSize);
          // system(cmd);
         //execlp(argv[0],argv[0],argv[1],argv[2],argv[3],argv[4],NULL);
-        printf("%s %d\n",keyword,strlen(keyword));
+        // printf("%s %d\n",keyword,strlen(keyword));
         system(cmd);
         free(cmd);
          free(pathToDir);
@@ -357,10 +356,8 @@ int main(int argc, char *argv[])
       // printf("wait: %d\n",i);
         wait();
       }
-  printf("done waiting\n");
+  sleep(1);
   free(commandFileLine);
   fclose(commandFile);
-  fflush(stdout);
-  sleep(1000);
-  return(0);
+  return 1;
 }
