@@ -357,8 +357,10 @@ int main(int argc, char *argv[])
       // printf("wait: %d\n",i);
         wait();
       }
-  // printf("done waiting\n");
+  printf("done waiting\n");
   free(commandFileLine);
   fclose(commandFile);
+  fflush(stdout);
+  sleep(1000);
   return(0);
 }

@@ -76,7 +76,7 @@ void destroyBuffer()
 int strcontains(char* fileline,char* keyword,int fileLength,int keywordLength)
 {
   int i,j;
-  for(i=0;i<fileLength-keywordLength;i++)
+  for(i=0;i<fileLength-keywordLength+1;i++)
   {
     if(i==0 || (!(fileline[i-1]>='a' && fileline[i-1]<='z') && !(fileline[i-1]>='A' && fileline[i-1]<='Z')))
     {
@@ -85,7 +85,7 @@ int strcontains(char* fileline,char* keyword,int fileLength,int keywordLength)
         if(tolower(keyword[j])==tolower(fileline[i+j]));
         else break;
       }
-      if(j==keywordLength && (fileline[i+j]=='\0' || (!(fileline[i+j]>='a' && fileline[i+j]<='z') && !(fileline[i+j]>='A' && fileline[i+j]<='Z')))) {return 1;}
+      if(j==keywordLength && (fileline[i+j]=='\0' || fileline[i+j]=='\n' || (!(fileline[i+j]>='a' && fileline[i+j]<='z') && !(fileline[i+j]>='A' && fileline[i+j]<='Z')))) {return 1;}
     }
   }
   return 0;
