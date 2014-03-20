@@ -10,6 +10,7 @@
 #include <ctype.h>
 #define MAXLINESIZE 1024
 int buffSize;
+FILE* fin;
 struct item
 {
   char* filename;
@@ -95,16 +96,16 @@ int strcontains(char* fileline,char* keyword,int fileLength,int keywordLength)
 }
 void* printer(void* a)
 {
-  fflush(stdout);
+  fflush(fin);
   struct global* this=(struct global*)a;
   loop:
   while(this->running_threads!=0 || !isEmpty(this))
   {
     while(isEmpty(this)){if(this->running_threads==0) goto label;}
-    fflush(stdout);
+    fflush(fin);
     pthread_mutex_lock(&this->bufferFront_lock);
-    fprintf(stdout,"%s:%d:%s\n",this->items[this->buffFront].filename,this->items[this->buffFront].line_number,this->items[this->buffFront].linestring);
-    fflush(stdout);
+    fprintf(fin,"%s:%d:%s\n",this->items[this->buffFront].filename,this->items[this->buffFront].line_number,this->items[this->buffFront].linestring);
+    fflush(fin);
     free(this->items[this->buffFront].filename);
     free(this->items[this->buffFront].linestring);
     this->buffFront++;
@@ -126,7 +127,7 @@ void* worker(void* a)
   FILE* file=fopen(fullFileName,"r");
   if(!file)
   {
-    fprintf(stdout,"Could not open file %s, line number: %d",fullFileName,this->line_no);
+    fprintf(fin,"Could not open file %s, line number: %d",fullFileName,this->line_no);
     pthread_exit(NULL);
   }
   free(fullFileName);
@@ -164,7 +165,7 @@ void* worker(void* a)
 }
 void mainChild(int argc,char* argv[])
 {
-  fflush(stdout);
+  fflush(fin);
   struct global* this=malloc(sizeof(struct global));
   this->running_threads=0;
   this->pathToDir=argv[1];
@@ -252,9 +253,15 @@ void mainChild(int argc,char* argv[])
 int main(int argc, char *argv[])
 {
   int i,j;
+  fin=fopen("output.txt","w");
+  if(!fin)
+  {
+    printf("Could not open output file\n");
+    return -1;
+  }
   if(argc != 3)
   {
-    fprintf(stdout,"Usage: %s pathToCommandFile bufferSize\n",argv[0]);
+    fprintf(fin,"Usage: %s pathToCommandFile bufferSize\n",argv[0]);
     return(1);
   }
   FILE* commandFile=fopen(argv[1],"r");
@@ -263,7 +270,7 @@ int main(int argc, char *argv[])
   if(buffSize<10) buffSize=10;
   if(!commandFile)
   {
-    fprintf(stdout,"Could not open file %s",argv[1]);
+    fprintf(fin,"Could not open file %s",argv[1]);
     return(2);
   }
   char c='a';
@@ -307,7 +314,7 @@ int main(int argc, char *argv[])
       pid=fork();
       if(pid<0)
       {
-        fprintf(stdout,"Fork Failed");
+        fprintf(fin,"Fork Failed");
         free(pathToDir);
         free(keyword);
         return 1;
@@ -341,9 +348,10 @@ int main(int argc, char *argv[])
     {
         wait(NULL);
     }
-  fflush(stdout);
+  fflush(fin);
   sleep(1);
   free(commandFileLine);
   fclose(commandFile);
+  fclose(fin);
   return 1;
 }

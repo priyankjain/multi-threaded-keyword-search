@@ -264,6 +264,7 @@ int main(int argc, char *argv[])
   FILE* commandFile=fopen(argv[1],"r");
   
   buffSize=atoi(argv[2]);
+  if(buffSize<10) buffSize=10;
   if(!commandFile)
   {
     fprintf(fin,"Could not open file %s",argv[1]);

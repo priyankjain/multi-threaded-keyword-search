@@ -1,0 +1,2643 @@
+==32336== Memcheck, a memory error detector
+==32336== Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.
+==32336== Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info
+==32336== Command: ./ks_bb commandFile.txt 10
+==32336== 
+==32336== Invalid write of size 1
+==32336==    at 0x80497FF: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32336==  Address 0x4210683 is 0 bytes after a block of size 3 alloc'd
+==32336==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x8049778: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32336== 
+==32339== Invalid write of size 2
+==32339==    at 0x8049306: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32339==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32339==  Address 0x421086e is 94 bytes inside a block of size 95 alloc'd
+==32339==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32339==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32339==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32339== 
+==32339== Syscall param openat(filename) points to unaddressable byte(s)
+==32339==    at 0x4143EA7: __openat_nocancel (openat.c:96)
+==32339==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32339==  Address 0x421086f is 0 bytes after a block of size 95 alloc'd
+==32339==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32339==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32339==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32339== 
+==32342== Invalid write of size 2
+==32340== Invalid write of size 2
+==32341== Invalid write of size 2
+==32341==    at 0x8049306: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32341==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32341==  Address 0x42109fe is 94 bytes inside a block of size 95 alloc'd
+==32341==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32341==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32341==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32341== 
+==32344== Invalid write of size 2
+==32340==    at 0x8049306: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32340==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32340==  Address 0x4210936 is 94 bytes inside a block of size 95 alloc'd
+==32340==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32340==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32340==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32340== 
+==32343== Invalid write of size 2
+==32342==    at 0x8049306: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32342==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32342==  Address 0x4210ac6 is 94 bytes inside a block of size 95 alloc'd
+==32342==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32342==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32342==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32342== 
+==32343==    at 0x8049306: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32343==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32343==  Address 0x4210b8e is 94 bytes inside a block of size 95 alloc'd
+==32343==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32343==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32343==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32343== 
+==32343== Syscall param openat(filename) points to unaddressable byte(s)
+==32343==    at 0x4143EA7: __openat_nocancel (openat.c:96)
+==32343==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32343==  Address 0x4210b8f is 0 bytes after a block of size 95 alloc'd
+==32343==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32343==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32343==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32343== 
+==32346== Invalid write of size 2
+==32344==    at 0x8049306: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32344==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32344==  Address 0x4210c56 is 94 bytes inside a block of size 95 alloc'd
+==32344==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32344==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32344==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32344== 
+==32341== Syscall param openat(filename) points to unaddressable byte(s)
+==32341==    at 0x4143EA7: __openat_nocancel (openat.c:96)
+==32341==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32341==  Address 0x42109ff is 0 bytes after a block of size 95 alloc'd
+==32341==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32341==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32341==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32341== 
+==32340== Syscall param openat(filename) points to unaddressable byte(s)
+==32340==    at 0x4143EA7: __openat_nocancel (openat.c:96)
+==32340==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32340==  Address 0x4210937 is 0 bytes after a block of size 95 alloc'd
+==32340==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32340==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32340==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32340== 
+==32342== Syscall param openat(filename) points to unaddressable byte(s)
+==32342==    at 0x4143EA7: __openat_nocancel (openat.c:96)
+==32342==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32342==  Address 0x4210ac7 is 0 bytes after a block of size 95 alloc'd
+==32342==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32342==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32342==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32342== 
+==32346==    at 0x8049306: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32346==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32346==  Address 0x4210de6 is 94 bytes inside a block of size 95 alloc'd
+==32346==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32346==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32346==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32346== 
+==32345== Invalid write of size 2
+==32345==    at 0x8049306: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32345==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32345==  Address 0x4210d1e is 94 bytes inside a block of size 95 alloc'd
+==32345==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32345==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32345==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32345== 
+==32347== Invalid write of size 2
+==32347==    at 0x8049306: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32347==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32347==  Address 0x4210eae is 94 bytes inside a block of size 95 alloc'd
+==32347==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32347==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32347==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32347== 
+==32344== Syscall param openat(filename) points to unaddressable byte(s)
+==32348== Invalid write of size 2
+==32348==    at 0x8049306: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32348==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32348==  Address 0x4210f76 is 94 bytes inside a block of size 95 alloc'd
+==32348==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32348==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32348==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32348== 
+==32345== Syscall param openat(filename) points to unaddressable byte(s)
+==32345==    at 0x4143EA7: __openat_nocancel (openat.c:96)
+==32345==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32345==  Address 0x4210d1f is 0 bytes after a block of size 95 alloc'd
+==32345==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32345==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32345==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32345== 
+==32346== Syscall param openat(filename) points to unaddressable byte(s)
+==32344==    at 0x4143EA7: __openat_nocancel (openat.c:96)
+==32344==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32344==  Address 0x4210c57 is 0 bytes after a block of size 95 alloc'd
+==32344==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32344==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32344==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32344== 
+==32349== Invalid write of size 2
+==32347== Syscall param openat(filename) points to unaddressable byte(s)
+==32350== Invalid write of size 2
+==32349==    at 0x8049306: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32349==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32349==  Address 0x421103e is 94 bytes inside a block of size 95 alloc'd
+==32349==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32349==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32349==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32349== 
+==32346==    at 0x4143EA7: __openat_nocancel (openat.c:96)
+==32346==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32346==  Address 0x4210de7 is 0 bytes after a block of size 95 alloc'd
+==32346==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32346==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32346==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32346== 
+==32350==    at 0x8049306: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32350==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32350==  Address 0x4211106 is 94 bytes inside a block of size 95 alloc'd
+==32350==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32350==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32350==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32350== 
+==32348== Syscall param openat(filename) points to unaddressable byte(s)
+==32347==    at 0x4143EA7: __openat_nocancel (openat.c:96)
+==32347==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32347==  Address 0x4210eaf is 0 bytes after a block of size 95 alloc'd
+==32347==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32347==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32347==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32347== 
+==32349== Syscall param openat(filename) points to unaddressable byte(s)
+==32350== Syscall param openat(filename) points to unaddressable byte(s)
+==32350==    at 0x4143EA7: __openat_nocancel (openat.c:96)
+==32350==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32350==  Address 0x4211107 is 0 bytes after a block of size 95 alloc'd
+==32350==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32350==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32350==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32350== 
+==32351== Invalid write of size 2
+==32351==    at 0x8049306: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32351==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32351==  Address 0x42111ce is 94 bytes inside a block of size 95 alloc'd
+==32351==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32351==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32351==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32351== 
+==32348==    at 0x4143EA7: __openat_nocancel (openat.c:96)
+==32348==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32348==  Address 0x4210f77 is 0 bytes after a block of size 95 alloc'd
+==32348==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32348==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32348==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32348== 
+==32352== Invalid write of size 2
+==32352==    at 0x8049306: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32352==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32352==  Address 0x4211296 is 94 bytes inside a block of size 95 alloc'd
+==32352==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32352==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32352==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32352== 
+==32349==    at 0x4143EA7: __openat_nocancel (openat.c:96)
+==32349==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32349==  Address 0x421103f is 0 bytes after a block of size 95 alloc'd
+==32349==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32349==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32349==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32349== 
+==32354== Invalid write of size 2
+==32351== Syscall param openat(filename) points to unaddressable byte(s)
+==32353== Invalid write of size 2
+==32355== Invalid write of size 2
+==32351==    at 0x4143EA7: __openat_nocancel (openat.c:96)
+==32351==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32351==  Address 0x42111cf is 0 bytes after a block of size 95 alloc'd
+==32351==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32351==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32351==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32351== 
+==32354==    at 0x8049306: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32354==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32354==  Address 0x4211426 is 94 bytes inside a block of size 95 alloc'd
+==32354==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32354==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32354==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32354== 
+==32353==    at 0x8049306: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32353==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32353==  Address 0x421135e is 94 bytes inside a block of size 95 alloc'd
+==32353==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32353==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32353==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32353== 
+==32352== Syscall param openat(filename) points to unaddressable byte(s)
+==32352==    at 0x4143EA7: __openat_nocancel (openat.c:96)
+==32352==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32352==  Address 0x4211297 is 0 bytes after a block of size 95 alloc'd
+==32352==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32352==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32352==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32352== 
+==32357== Invalid write of size 2
+==32356== Invalid write of size 2
+==32356==    at 0x8049306: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32356==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32356==  Address 0x42115b6 is 94 bytes inside a block of size 95 alloc'd
+==32356==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32356==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32356==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32356== 
+==32355==    at 0x8049306: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32355==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32355==  Address 0x42114ee is 94 bytes inside a block of size 95 alloc'd
+==32355==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32355==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32355==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32355== 
+==32354== Syscall param openat(filename) points to unaddressable byte(s)
+==32358== Invalid write of size 2
+==32353== Syscall param openat(filename) points to unaddressable byte(s)
+==32353==    at 0x4143EA7: __openat_nocancel (openat.c:96)
+==32353==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32353==  Address 0x421135f is 0 bytes after a block of size 95 alloc'd
+==32353==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32353==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32353==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32353== 
+==32354==    at 0x4143EA7: __openat_nocancel (openat.c:96)
+==32354==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32354==  Address 0x4211427 is 0 bytes after a block of size 95 alloc'd
+==32354==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32354==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32354==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32354== 
+==32357==    at 0x8049306: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32358==    at 0x8049306: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32358==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32357==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32357==  Address 0x421167e is 94 bytes inside a block of size 95 alloc'd
+==32357==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32357==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32357==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32357== 
+==32358==  Address 0x4211746 is 94 bytes inside a block of size 95 alloc'd
+==32358==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32358==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32358==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32358== 
+==32355== Syscall param openat(filename) points to unaddressable byte(s)
+==32356== Syscall param openat(filename) points to unaddressable byte(s)
+==32356==    at 0x4143EA7: __openat_nocancel (openat.c:96)
+==32356==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32356==  Address 0x42115b7 is 0 bytes after a block of size 95 alloc'd
+==32356==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32356==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32356==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32356== 
+==32355==    at 0x4143EA7: __openat_nocancel (openat.c:96)
+==32355==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32355==  Address 0x42114ef is 0 bytes after a block of size 95 alloc'd
+==32355==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32355==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32355==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32355== 
+==32357== Syscall param openat(filename) points to unaddressable byte(s)
+==32358== Syscall param openat(filename) points to unaddressable byte(s)
+==32358==    at 0x4143EA7: __openat_nocancel (openat.c:96)
+==32358==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32358==  Address 0x4211747 is 0 bytes after a block of size 95 alloc'd
+==32358==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32358==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32358==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32358== 
+==32339== Thread 2:
+==32339== Invalid read of size 1
+==32339==    at 0x402C6C5: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32339==    by 0x8048FB4: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32339==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32339==    by 0x4154BAD: clone (clone.S:130)
+==32339==  Address 0x421086f is 0 bytes after a block of size 95 alloc'd
+==32339==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32339==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32339==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32339== 
+==32357==    at 0x4143EA7: __openat_nocancel (openat.c:96)
+==32357==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32357==  Address 0x421167f is 0 bytes after a block of size 95 alloc'd
+==32357==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32357==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32357==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32357== 
+==32341== Thread 2:
+==32340== Thread 2:
+==32340== Invalid read of size 1
+==32340==    at 0x402C6C5: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32340==    by 0x8048FB4: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32340==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32340==    by 0x4154BAD: clone (clone.S:130)
+==32340==  Address 0x4210937 is 0 bytes after a block of size 95 alloc'd
+==32340==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32340==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32340==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32340== 
+==32339== Conditional jump or move depends on uninitialised value(s)
+==32339==    at 0x804917B: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32339==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32339==    by 0x4154BAD: clone (clone.S:130)
+==32339== 
+==32344== Thread 2:
+==32344== Invalid read of size 1
+==32344==    at 0x402C6C5: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32344==    by 0x8048FB4: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32344==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32344==    by 0x4154BAD: clone (clone.S:130)
+==32344==  Address 0x4210c57 is 0 bytes after a block of size 95 alloc'd
+==32344==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32344==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32344==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32344== 
+==32341== Invalid read of size 1
+==32341==    at 0x402C6C5: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32341==    by 0x8048FB4: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32341==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32341==    by 0x4154BAD: clone (clone.S:130)
+==32341==  Address 0x42109ff is 0 bytes after a block of size 95 alloc'd
+==32341==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32341==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32341==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32341== 
+==32343== Thread 2:
+==32343== Invalid read of size 1
+==32343==    at 0x402C6C5: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32343==    by 0x8048FB4: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32343==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32343==    by 0x4154BAD: clone (clone.S:130)
+==32343==  Address 0x4210b8f is 0 bytes after a block of size 95 alloc'd
+==32343==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32343==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32343==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32343== 
+==32342== Thread 2:
+==32342== Invalid read of size 1
+==32342==    at 0x402C6C5: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32342==    by 0x8048FB4: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32342==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32342==    by 0x4154BAD: clone (clone.S:130)
+==32342==  Address 0x4210ac7 is 0 bytes after a block of size 95 alloc'd
+==32342==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32342==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32342==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32342== 
+==32347== Thread 2:
+==32347== Invalid read of size 1
+==32347==    at 0x402C6C5: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32347==    by 0x8048FB4: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32347==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32347==    by 0x4154BAD: clone (clone.S:130)
+==32347==  Address 0x4210eaf is 0 bytes after a block of size 95 alloc'd
+==32347==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32347==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32347==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32347== 
+==32344== Thread 4:
+==32348== Invalid read of size 1
+==32348==    at 0x402C6C5: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32348==    by 0x8048FB4: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32348==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32348==    by 0x4154BAD: clone (clone.S:130)
+==32348==  Address 0x4210f77 is 0 bytes after a block of size 95 alloc'd
+==32348==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32348==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32348==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32348== 
+==32344== Conditional jump or move depends on uninitialised value(s)
+==32349== Thread 2:
+==32349== Invalid read of size 1
+==32349==    at 0x402C6C5: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32349==    by 0x8048FB4: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32349==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32349==    by 0x4154BAD: clone (clone.S:130)
+==32349==  Address 0x421103f is 0 bytes after a block of size 95 alloc'd
+==32349==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32349==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32349==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32349== 
+==32344==    at 0x804917B: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32344==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32344==    by 0x4154BAD: clone (clone.S:130)
+==32344== 
+==32350== Thread 2:
+==32350== Invalid read of size 1
+==32350==    at 0x402C6C5: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32350==    by 0x8048FB4: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32350==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32350==    by 0x4154BAD: clone (clone.S:130)
+==32350==  Address 0x4211107 is 0 bytes after a block of size 95 alloc'd
+==32350==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32350==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32350==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32350== 
+==32346== Thread 3:
+==32345== Conditional jump or move depends on uninitialised value(s)
+==32345==    at 0x804917B: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32345==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32348== Thread 3:
+==32346== Conditional jump or move depends on uninitialised value(s)
+==32346==    at 0x804917B: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32346==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32346==    by 0x4154BAD: clone (clone.S:130)
+==32346== 
+==32347== Conditional jump or move depends on uninitialised value(s)
+==32347==    at 0x804917B: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32347==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32347==    by 0x4154BAD: clone (clone.S:130)
+==32347== 
+==32351== Thread 2:
+==32345==    by 0x4154BAD: clone (clone.S:130)
+==32345== 
+==32352== Thread 2:
+==32348== Conditional jump or move depends on uninitialised value(s)
+==32351== Invalid read of size 1
+==32351==    at 0x402C6C5: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32351==    by 0x8048FB4: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32351==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32351==    by 0x4154BAD: clone (clone.S:130)
+==32351==  Address 0x42111cf is 0 bytes after a block of size 95 alloc'd
+==32351==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32351==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32351==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32351== 
+==32348==    at 0x804917B: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32348==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32348==    by 0x4154BAD: clone (clone.S:130)
+==32348== 
+==32352== Invalid read of size 1
+==32352==    at 0x402C6C5: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32352==    by 0x8048FB4: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32352==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32352==    by 0x4154BAD: clone (clone.S:130)
+==32352==  Address 0x4211297 is 0 bytes after a block of size 95 alloc'd
+==32352==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32352==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32352==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32352== 
+==32349== Thread 3:
+==32349== Conditional jump or move depends on uninitialised value(s)
+==32349==    at 0x804917B: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32349==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32349==    by 0x4154BAD: clone (clone.S:130)
+==32349== 
+==32353== Thread 2:
+==32354== Thread 2:
+==32351== Thread 3:
+==32351== Con==32353==    at 0x402C6C5: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32353==    by 0x8048FB4: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32353==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32353==    by 0x4154BAD: clone (clone.S:130)
+==32353==  Address 0x421135f is 0 bytes after a block of size 95 alloc'd
+==32353==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32353==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32353==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32353== 
+==32350==    at 0x804917B: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32350==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32350==    by 0x4154BAD: clone (clone.S:130)
+==32350== 
+==32352== Thread 3:
+==32355== Thread 2:
+==32355== Invalid read of size 1
+==32355==    at 0x402C6C5: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32355==    by 0x8048FB4: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32355==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32355==    by 0x4154BAD: clone (clone.S:130)
+==32355==  Address 0x42114ef is 0 bytes after a block of size 95 alloc'd
+==32355==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32355==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32355==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32355== 
+==32352== Conditional jump or move depends on uninitialised value(s)
+==32352==    at 0x804917B: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32352==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32352==    by 0x4154BAD: clone (clone.S:130)
+==32352== 
+==32356== Thread 3:
+==32353== Thread 3:
+==32353== Conditional jump or move depends on uninitialised value(s)
+==32353==    at 0x804917B: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32353==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32353==    by 0x4154BAD: clone (clone.S:130)
+==32353== 
+==32354== Thread 3:
+==32358== Thread 2:
+==32358== Invalid read of size 1
+==32358==    at 0x402C6C5: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32358==    by 0x8048FB4: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32358==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32358==    by 0x4154BAD: clone (clone.S:130)
+==32358==  Address 0x4211747 is 0 bytes after a block of size 95 alloc'd
+==32358==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32358==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32358==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32358== 
+==32357== Thread 2:
+==32356== Conditional jump or move depends on uninitialised value(s)
+==32356==    at 0x804917B: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32356==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32356==    by 0x4154BAD: clone (clone.S:130)
+==32356== 
+==32357== Invalid read of size 1
+==32357==    at 0x402C6C5: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32357==    by 0x8048FB4: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32357==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32357==    by 0x4154BAD: clone (clone.S:130)
+==32357==  Address 0x421167f is 0 bytes after a block of size 95 alloc'd
+==32357==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32357==    by 0x80492C3: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32357==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32357== 
+==32354== Conditional jump or move depends on uninitialised value(s)
+==32354==    at 0x804917B: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32354==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32354==    by 0x4154BAD: clone (clone.S:130)
+==32354== 
+==32355== Thread 3:
+==32355== Conditional jump or move depends on uninitialised value(s)
+==32355==    at 0x804917B: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32355==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32355==    by 0x4154BAD: clone (clone.S:130)
+==32355== 
+==32357== Thread 3:
+==32357== Conditional jump or move depends on uninitialised value(s)
+==32357==    at 0x804917B: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32357==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32357==    by 0x4154BAD: clone (clone.S:130)
+==32357== 
+file3.txt:2:years, but this is the first time
+==32358== Conditional jump or move depends on uninitialised value(s)
+==32358==    at 0x804917B: worker (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32358==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32358==    by 0x4154BAD: clone (clone.S:130)
+==32358== 
+file3.txt:19:is to be married and you ask me to
+file3.txt:2:years, but this is the first time
+file3.txt:2:years, but this is the first time
+file3.txt:2:years, but this is the first time
+file3.txt:2:years, but this is the first time
+file3.txt:19:is to be married and you ask me to
+file5.txt:3:to do me a service in return.
+file3.txt:2:years, but this is the first time
+file3.txt:19:is to be married and you ask me to
+file3.txt:12:don't need a friend like me.
+file3.txt:12:don't need a friend like me.
+file5.txt:3:to do me a service in return.
+file3.txt:2:years, but this is the first time
+file3.txt:12:don't need a friend like me.
+file2.txt:1:I went to the Police like a good
+file2.txt:8:stood in the courtroom like a fool,
+file1.txt:4:family.  She found a boy friend,
+file1.txt:7:Two months ago he took her for a
+file1.txt:4:family.  She found a boy friend,
+file1.txt:7:Two months ago he took her for a
+file5.txt:3:to do me a service in return.
+file3.txt:12:don't need a friend like me.
+file3.txt:12:don't need a friend like me.
+file3.txt:19:is to be married and you ask me to
+file3.txt:19:is to be married and you ask me to
+file3.txt:19:is to be married and you ask me to
+file3.txt:19:is to be married and you ask me to
+file3.txt:2:years, but this is the first time
+file3.txt:19:is to be married and you ask me to
+file5.txt:3:to do me a service in return.
+file3.txt:12:don't need a friend like me.
+file2.txt:1:I went to the Police like a good
+file2.txt:8:stood in the courtroom like a fool,
+file1.txt:4:family.  She found a boy friend,
+file1.txt:7:Two months ago he took her for a
+file3.txt:2:years, but this is the first time
+file5.txt:3:to do me a service in return.
+file1.txt:4:family.  She found a boy friend,
+file1.txt:7:Two months ago he took her for a
+file2.txt:1:I went to the Police like a good
+file2.txt:8:stood in the courtroom like a fool,
+file3.txt:12:don't need a friend like me.
+file3.txt:2:years, but this is the first time
+file3.txt:19:is to be married and you ask me to
+file3.txt:19:is to be married and you ask me to
+file5.txt:3:to do me a service in return.
+file1.txt:4:family.  She found a boy friend,
+file1.txt:7:Two months ago he took her for a
+file2.txt:1:I went to the Police like a good
+file2.txt:8:stood in the courtroom like a fool,
+file5.txt:3:to do me a service in return.
+file3.txt:12:don't need a friend like me.
+file1.txt:4:family.  She found a boy friend,
+file1.txt:7:Two months ago he took her for a
+file2.txt:1:I went to the Police like a good
+file5.txt:3:to do me a service in return.
+file2.txt:1:I went to the Police like a good
+file2.txt:8:stood in the courtroom like a fool,
+file1.txt:4:family.  She found a boy friend,
+file1.txt:7:Two months ago he took her for a
+file5.txt:3:to do me a service in return.
+file2.txt:1:I went to the Police like a good
+file2.txt:8:stood in the courtroom like a fool,
+file3.txt:12:don't need a friend like me.
+file3.txt:12:don't need a friend like me.
+file2.txt:1:I went to the Police like a good
+file2.txt:8:stood in the courtroom like a fool,
+file1.txt:4:family.  She found a boy friend,
+file1.txt:7:Two months ago he took her for a
+file2.txt:8:stood in the courtroom like a fool,
+file5.txt:3:to do me a service in return.
+file2.txt:1:I went to the Police like a good
+file2.txt:8:stood in the courtroom like a fool,
+file1.txt:4:family.  She found a boy friend,
+file1.txt:7:Two months ago he took her for a
+file2.txt:1:I went to the Police like a good
+file2.txt:8:stood in the courtroom like a fool,
+file1.txt:4:family.  She found a boy friend,
+file1.txt:7:Two months ago he took her for a
+==32339== 
+==32339== HEAP SUMMARY:
+==32339==     in use at exit: 1,868 bytes in 12 blocks
+==32339==   total heap usage: 54 allocs, 42 frees, 61,232 bytes allocated
+==32339== 
+==32347== 
+==32347== HEAP SUMMARY:
+==32347==     in use at exit: 1,868 bytes in 12 blocks
+==32347==   total heap usage: 70 allocs, 58 frees, 62,016 bytes allocated
+==32347== 
+==32341== 
+==32341== HEAP SUMMARY:
+==32341==     in use at exit: 1,868 bytes in 12 blocks
+==32341==   total heap usage: 58 allocs, 46 frees, 61,428 bytes allocated
+==32341== 
+==32342== 
+==32342== HEAP SUMMARY:
+==32342==     in use at exit: 1,868 bytes in 12 blocks
+==32342==   total heap usage: 60 allocs, 48 frees, 61,526 bytes allocated
+==32342== 
+==32340== 
+==32340== HEAP SUMMARY:
+==32340==     in use at exit: 1,868 bytes in 12 blocks
+==32340==   total heap usage: 56 allocs, 44 frees, 61,330 bytes allocated
+==32340== 
+==32350== 
+==32350== HEAP SUMMARY:
+==32350==     in use at exit: 1,867 bytes in 12 blocks
+==32350==   total heap usage: 84 allocs, 72 frees, 70,500 bytes allocated
+==32350== 
+==32348== 
+==32348== HEAP SUMMARY:
+==32348==     in use at exit: 1,868 bytes in 12 blocks
+==32348==   total heap usage: 72 allocs, 60 frees, 62,114 bytes allocated
+==32348== 
+==32344== 
+==32344== HEAP SUMMARY:
+==32344==     in use at exit: 1,868 bytes in 12 blocks
+==32344==   total heap usage: 64 allocs, 52 frees, 61,722 bytes allocated
+==32344== 
+==32349== 
+==32349== HEAP SUMMARY:
+==32349==     in use at exit: 1,867 bytes in 12 blocks
+==32349==   total heap usage: 82 allocs, 70 frees, 70,403 bytes allocated
+==32349== 
+==32352== 
+==32353== 
+==32346== 
+==32346== HEAP SUMMARY:
+==32346==     in use at exit: 1,868 bytes in 12 blocks
+==32346==   total heap usage: 68 allocs, 56 frees, 61,918 bytes allocated
+==32346== 
+==32354== 
+==32354== HEAP SUMMARY:
+==32354==     in use at exit: 1,867 bytes in 12 blocks
+==32354==   total heap usage: 92 allocs, 80 frees, 70,888 bytes allocated
+==32354== 
+==32358== 
+==32351== 
+==32351== HEAP SUMMARY:
+==32351==     in use at exit: 1,867 bytes in 12 blocks
+==32351==   total heap usage: 86 allocs, 74 frees, 70,597 bytes allocated
+==32351== 
+==32358== HEAP SUMMARY:
+==32358==     in use at exit: 1,867 bytes in 12 blocks
+==32358==   total heap usage: 100 allocs, 88 frees, 71,276 bytes allocated
+==32358== 
+==32356== 
+==32356== HEAP SUMMARY:
+==32356==     in use at exit: 1,867 bytes in 12 blocks
+==32356==   total heap usage: 96 allocs, 84 frees, 71,082 bytes allocated
+==32356== 
+==32355== 
+==32355== HEAP SUMMARY:
+==32355==     in use at exit: 1,867 bytes in 12 blocks
+==32355==   total heap usage: 94 allocs, 82 frees, 70,985 bytes allocated
+==32355== 
+==32339== Thread 1:
+==32339== 3 bytes in 1 blocks are still reachable in loss record 1 of 7
+==32339==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32339==    by 0x8049778: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32339== 
+==32339== 34 bytes in 1 blocks are still reachable in loss record 2 of 7
+==32339==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32339==    by 0x400542E: local_strdup (dl-load.c:162)
+==32339==    by 0x40085E3: _dl_map_object (dl-load.c:2473)
+==32339==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32339==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32339==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32339==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32339==    by 0x4154BAD: clone (clone.S:130)
+==32339== 
+==32339== 34 bytes in 1 blocks are still reachable in loss record 3 of 7
+==32339==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32339==    by 0x400B06A: _dl_new_object (dl-object.c:161)
+==32339==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32339==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32339==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32339==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32339==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32339==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32339==    by 0x4154BAD: clone (clone.S:130)
+==32339== 
+==32339== 95 bytes in 1 blocks are still reachable in loss record 4 of 7
+==32339==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32339==    by 0x804975E: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32339== 
+==32339== 256 bytes in 1 blocks are still reachable in loss record 5 of 7
+==32339==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32339==    by 0x401046C: _dl_check_map_versions (dl-version.c:300)
+==32339==    by 0x401337A: dl_open_worker (dl-open.c:268)
+==32339==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32339==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32339==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32339==    by 0x4154BAD: clone (clone.S:130)
+==32339== 
+==32339== 630 bytes in 1 blocks are still reachable in loss record 6 of 7
+==32339==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32339==    by 0x400AE1F: _dl_new_object (dl-object.c:77)
+==32339==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32339==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32339==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32339==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32339==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32339==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32339==    by 0x4154BAD: clone (clone.S:130)
+==32339== 
+==32339== 816 bytes in 6 blocks are possibly lost in loss record 7 of 7
+==32339==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32339==    by 0x4011304: allocate_dtv (dl-tls.c:297)
+==32339==    by 0x4011AAB: _dl_allocate_tls (dl-tls.c:461)
+==32339==    by 0x4051470: pthread_create@@GLIBC_2.1 (allocatestack.c:571)
+==32339==    by 0x80494E0: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32339==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32339== 
+==32339== LEAK SUMMARY:
+==32339==    definitely lost: 0 bytes in 0 blocks
+==32339==    indirectly lost: 0 bytes in 0 blocks
+==32339==      possibly lost: 816 bytes in 6 blocks
+==32339==    still reachable: 1,052 bytes in 6 blocks
+==32339==         suppressed: 0 bytes in 0 blocks
+==32339== 
+==32339== For counts of detected and suppressed errors, rerun with: -v
+==32339== Use --track-origins=yes to see where uninitialised values come from
+==32339== ERROR SUMMARY: 16 errors from 6 contexts (suppressed: 0 from 0)
+==32341== Thread 1:
+==32341== 3 bytes in 1 blocks are still reachable in loss record 1 of 7
+==32341==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32341==    by 0x8049778: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32341== 
+==32341== 34 bytes in 1 blocks are still reachable in loss record 2 of 7
+==32341==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32341==    by 0x400542E: local_strdup (dl-load.c:162)
+==32341==    by 0x40085E3: _dl_map_object (dl-load.c:2473)
+==32341==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32341==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32341==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32341==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32341==    by 0x4154BAD: clone (clone.S:130)
+==32341== 
+==32341== 34 bytes in 1 blocks are still reachable in loss record 3 of 7
+==32341==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32341==    by 0x400B06A: _dl_new_object (dl-object.c:161)
+==32341==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32341==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32341==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32341==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32341==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32341==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32341==    by 0x4154BAD: clone (clone.S:130)
+==32341== 
+==32341== 95 bytes in 1 blocks are still reachable in loss record 4 of 7
+==32341==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32341==    by 0x804975E: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32341== 
+==32341== 256 bytes in 1 blocks are still reachable in loss record 5 of 7
+==32341==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32341==    by 0x401046C: _dl_check_map_versions (dl-version.c:300)
+==32341==    by 0x401337A: dl_open_worker (dl-open.c:268)
+==32341==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32341==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32341==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32341==    by 0x4154BAD: clone (clone.S:130)
+==32341== 
+==32341== 630 bytes in 1 blocks are still reachable in loss record 6 of 7
+==32341==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32341==    by 0x400AE1F: _dl_new_object (dl-object.c:77)
+==32341==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32341==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32341==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32341==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32341==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32341==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32341==    by 0x4154BAD: clone (clone.S:130)
+==32341== 
+==32341== 816 bytes in 6 blocks are possibly lost in loss record 7 of 7
+==32341==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32341==    by 0x4011304: allocate_dtv (dl-tls.c:297)
+==32341==    by 0x4011AAB: _dl_allocate_tls (dl-tls.c:461)
+==32341==    by 0x4051470: pthread_create@@GLIBC_2.1 (allocatestack.c:571)
+==32341==    by 0x80494E0: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32341==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32341== 
+==32341== LEAK SUMMARY:
+==32341==    definitely lost: 0 bytes in 0 blocks
+==32341==    indirectly lost: 0 bytes in 0 blocks
+==32341==      possibly lost: 816 bytes in 6 blocks
+==32341==    still reachable: 1,052 bytes in 6 blocks
+==32341==         suppressed: 0 bytes in 0 blocks
+==32341== 
+==32341== For counts of detected and suppressed errors, rerun with: -v
+==32341== Use --track-origins=yes to see where uninitialised values come from
+==32341== ERROR SUMMARY: 18 errors from 6 contexts (suppressed: 0 from 0)
+==32342== Thread 1:
+==32342== 3 bytes in 1 blocks are still reachable in loss record 1 of 7
+==32342==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32342==    by 0x8049778: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32342== 
+==32342== 34 bytes in 1 blocks are still reachable in loss record 2 of 7
+==32342==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32342==    by 0x400542E: local_strdup (dl-load.c:162)
+==32342==    by 0x40085E3: _dl_map_object (dl-load.c:2473)
+==32342==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32342==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32342==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32342==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32342==    by 0x4154BAD: clone (clone.S:130)
+==32342== 
+==32342== 34 bytes in 1 blocks are still reachable in loss record 3 of 7
+==32342==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32342==    by 0x400B06A: _dl_new_object (dl-object.c:161)
+==32342==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32342==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32342==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32342==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32342==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32342==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32342==    by 0x4154BAD: clone (clone.S:130)
+==32342== 
+==32342== 95 bytes in 1 blocks are still reachable in loss record 4 of 7
+==32342==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32342==    by 0x804975E: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32342== 
+==32342== 256 bytes in 1 blocks are still reachable in loss record 5 of 7
+==32342==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32342==    by 0x401046C: _dl_check_map_versions (dl-version.c:300)
+==32342==    by 0x401337A: dl_open_worker (dl-open.c:268)
+==32342==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32342==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32342==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32342==    by 0x4154BAD: clone (clone.S:130)
+==32344== Thread 1:
+==32344== 3 bytes in 1 blocks are still reachable in loss record 1 of 7
+==32344==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32344==    by 0x8049778: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32344== 
+==32344== 34 bytes in 1 blocks are still reachable in loss record 2 of 7
+==32344==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32344==    by 0x400542E: local_strdup (dl-load.c:162)
+==32344==    by 0x40085E3: _dl_map_object (dl-load.c:2473)
+==32344==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32344==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32344==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32344==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32344==    by 0x4154BAD: clone (clone.S:130)
+==32344== 
+==32344== 34 bytes in 1 blocks are still reachable in loss record 3 of 7
+==32344==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32344==    by 0x400B06A: _dl_new_object (dl-object.c:161)
+==32344==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32344==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32344==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32344==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32344==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32344==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32344==    by 0x4154BAD: clone (clone.S:130)
+==32344== 
+==32344== 95 bytes in 1 blocks are still reachable in loss record 4 of 7
+==32344==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32344==    by 0x804975E: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32344== 
+==32344== 256 bytes in 1 blocks are still reachable in loss record 5 of 7
+==32344==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32344==    by 0x401046C: _dl_check_map_versions (dl-version.c:300)
+==32344==    by 0x401337A: dl_open_worker (dl-open.c:268)
+==32344==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32344==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32344==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32344==    by 0x4154BAD: clone (clone.S:130)
+==32344== 
+==32344== 630 bytes in 1 blocks are still reachable in loss record 6 of 7
+==32344==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32344==    by 0x400AE1F: _dl_new_object (dl-object.c:77)
+==32344==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32344==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32344==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32344==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32344==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32344==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32344==    by 0x4154BAD: clone (clone.S:130)
+==32344== 
+==32344== 816 bytes in 6 blocks are possibly lost in loss record 7 of 7
+==32344==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32344==    by 0x4011304: allocate_dtv (dl-tls.c:297)
+==32344==    by 0x4011AAB: _dl_allocate_tls (dl-tls.c:461)
+==32344==    by 0x4051470: pthread_create@@GLIBC_2.1 (allocatestack.c:571)
+==32344==    by 0x80494E0: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32344==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32344== 
+==32344== LEAK SUMMARY:
+==32344==    definitely lost: 0 bytes in 0 blocks
+==32344==    indirectly lost: 0 bytes in 0 blocks
+==32344==      possibly lost: 816 bytes in 6 blocks
+==32344==    still reachable: 1,052 bytes in 6 blocks
+==32344==         suppressed: 0 bytes in 0 blocks
+==32344== 
+==32344== For counts of detected and suppressed errors, rerun with: -v
+==32344== Use --track-origins=yes to see where uninitialised values come from
+==32344== ERROR SUMMARY: 21 errors from 6 contexts (suppressed: 0 from 0)
+==32345== Thread 1:
+==32345== 3 bytes in 1 blocks are still reachable in loss record 1 of 7
+==32345==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32345==    by 0x8049778: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32345== 
+==32345== 34 bytes in 1 blocks are still reachable in loss record 2 of 7
+==32345==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32345==    by 0x400542E: local_strdup (dl-load.c:162)
+==32345==    by 0x40085E3: _dl_map_object (dl-load.c:2473)
+==32345==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32345==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32345==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32345==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32345==    by 0x4154BAD: clone (clone.S:130)
+==32345== 
+==32345== 34 bytes in 1 blocks are still reachable in loss record 3 of 7
+==32345==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32345==    by 0x400B06A: _dl_new_object (dl-object.c:161)
+==32345==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32345==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32345==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32345==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32345==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32345==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32345==    by 0x4154BAD: clone (clone.S:130)
+==32345== 
+==32345== 95 bytes in 1 blocks are still reachable in loss record 4 of 7
+==32345==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32345==    by 0x804975E: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32345== 
+==32345== 256 bytes in 1 blocks are still reachable in loss record 5 of 7
+==32345==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32345==    by 0x401046C: _dl_check_map_versions (dl-version.c:300)
+==32345==    by 0x401337A: dl_open_worker (dl-open.c:268)
+==32345==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32345==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32345==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32345==    by 0x4154BAD: clone (clone.S:130)
+==32345== 
+==32345== 630 bytes in 1 blocks are still reachable in loss record 6 of 7
+==32345==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32345==    by 0x400AE1F: _dl_new_object (dl-object.c:77)
+==32345==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32345==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32345==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32345==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32345==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32345==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32345==    by 0x4154BAD: clone (clone.S:130)
+==32345== 
+==32345== 816 bytes in 6 blocks are possibly lost in loss record 7 of 7
+==32345==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32345==    by 0x4011304: allocate_dtv (dl-tls.c:297)
+==32345==    by 0x4011AAB: _dl_allocate_tls (dl-tls.c:461)
+==32345==    by 0x4051470: pthread_create@@GLIBC_2.1 (allocatestack.c:571)
+==32345==    by 0x80494E0: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32345==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32345== 
+==32345== LEAK SUMMARY:
+==32345==    definitely lost: 0 bytes in 0 blocks
+==32345==    indirectly lost: 0 bytes in 0 blocks
+==32345==      possibly lost: 816 bytes in 6 blocks
+==32345==    still reachable: 1,052 bytes in 6 blocks
+==32345==         suppressed: 0 bytes in 0 blocks
+==32345== 
+==32345== For counts of detected and suppressed errors, rerun with: -v
+==32345== Use --track-origins=yes to see where uninitialised values come from
+==32345== ERROR SUMMARY: 22 errors from 6 contexts (suppressed: 0 from 0)
+==32346== Thread 1:
+==32354== Thread 1:
+==32354== 2 bytes in 1 blocks are still reachable in loss record 1 of 7
+==32354==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32354==    by 0x8049778: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32354== 
+==32354== 34 bytes in 1 blocks are still reachable in loss record 2 of 7
+==32354==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32354==    by 0x400542E: local_strdup (dl-load.c:162)
+==32354==    by 0x40085E3: _dl_map_object (dl-load.c:2473)
+==32354==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32354==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32354==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32354==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32354==    by 0x4154BAD: clone (clone.S:130)
+==32354== 
+==32354== 34 bytes in 1 blocks are still reachable in loss record 3 of 7
+==32354==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32354==    by 0x400B06A: _dl_new_object (dl-object.c:161)
+==32354==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32354==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32354==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32354==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32354==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32354==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32354==    by 0x4154BAD: clone (clone.S:130)
+==32354== 
+==32354== 95 bytes in 1 blocks are still reachable in loss record 4 of 7
+==32354==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32354==    by 0x804975E: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32354== 
+==32354== 256 bytes in 1 blocks are still reachable in loss record 5 of 7
+==32354==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32354==    by 0x401046C: _dl_check_map_versions (dl-version.c:300)
+==32354==    by 0x401337A: dl_open_worker (dl-open.c:268)
+==32354==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32354==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32354==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32354==    by 0x4154BAD: clone (clone.S:130)
+==32354== 
+==32354== 630 bytes in 1 blocks are still reachable in loss record 6 of 7
+==32354==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32354==    by 0x400AE1F: _dl_new_object (dl-object.c:77)
+==32354==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32354==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32354==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32346== 3 bytes in 1 blocks are still reachable in loss record 1 of 7
+==32346==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32346==    by 0x8049778: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32346== 
+==32346== 34 bytes in 1 blocks are still reachable in loss record 2 of 7
+==32346==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32346==    by 0x400542E: local_strdup (dl-load.c:162)
+==32346==    by 0x40085E3: _dl_map_object (dl-load.c:2473)
+==32346==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32346==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32346==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32346==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32346==    by 0x4154BAD: clone (clone.S:130)
+==32346== 
+==32346== 34 bytes in 1 blocks are still reachable in loss record 3 of 7
+==32346==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32346==    by 0x400B06A: _dl_new_object (dl-object.c:161)
+==32346==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32346==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32346==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32346==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32346==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32346==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32346==    by 0x4154BAD: clone (clone.S:130)
+==32346== 
+==32346== 95 bytes in 1 blocks are still reachable in loss record 4 of 7
+==32346==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32346==    by 0x804975E: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32346== 
+==32346== 256 bytes in 1 blocks are still reachable in loss record 5 of 7
+==32346==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32346==    by 0x401046C: _dl_check_map_versions (dl-version.c:300)
+==32346==    by 0x401337A: dl_open_worker (dl-open.c:268)
+==32346==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32346==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32346==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32346==    by 0x4154BAD: clone (clone.S:130)
+==32346== 
+==32346== 630 bytes in 1 blocks are still reachable in loss record 6 of 7
+==32346==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32346==    by 0x400AE1F: _dl_new_object (dl-object.c:77)
+==32346==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32346==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32346==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32346==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32346==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32346==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32346==    by 0x4154BAD: clone (clone.S:130)
+==32354==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32354==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32354==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32354==    by 0x4154BAD: clone (clone.S:130)
+==32354== 
+==32354== 816 bytes in 6 blocks are possibly lost in loss record 7 of 7
+==32354==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32354==    by 0x4011304: allocate_dtv (dl-tls.c:297)
+==32354==    by 0x4011AAB: _dl_allocate_tls (dl-tls.c:461)
+==32354==    by 0x4051470: pthread_create@@GLIBC_2.1 (allocatestack.c:571)
+==32354==    by 0x80494E0: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32354==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32354== 
+==32354== LEAK SUMMARY:
+==32354==    definitely lost: 0 bytes in 0 blocks
+==32354==    indirectly lost: 0 bytes in 0 blocks
+==32354==      possibly lost: 816 bytes in 6 blocks
+==32354==    still reachable: 1,051 bytes in 6 blocks
+==32354==         suppressed: 0 bytes in 0 blocks
+==32354== 
+==32354== For counts of detected and suppressed errors, rerun with: -v
+==32354== Use --track-origins=yes to see where uninitialised values come from
+==32354== ERROR SUMMARY: 31 errors from 6 contexts (suppressed: 0 from 0)
+==32346== 
+==32346== 816 bytes in 6 blocks are possibly lost in loss record 7 of 7
+==32346==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32340== 3 bytes in 1 blocks are still reachable in loss record 1 of 7
+==32340==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32340==    by 0x8049778: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32346==    by 0x4051470: pthread_create@@GLIBC_2.1 (allocatestack.c:571)
+==32340== 34 bytes in 1 blocks are still reachable in loss record 2 of 7
+==32340==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+lackBoxOriginal/BlackBoxTesting/ks_bb)
+==32346== 
+==32346== LEAK SUMMARY:
+==32340==    by 0x40085E3: _dl_map_object (dl-load==32346==    indirectly lost: 0 bytes in 0 blocks
+==32340==    by 0x4012D6C: dl_open_worker (dl-open.c==32346==    still reachable: 1,052 bytes in 6 blocks
+==32340==    by 0x400ECCE: _dl_catch_error (dl-err==32346== 
+==32340==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32346== Use --track-origins=yes to see where uninitialised values come from
+==32346== ERROR SUMMARY: 23 errors from 6 contexts (suppressed: 0 from 0)
+==32340==    by 0x4154BAD: clone (clone.S:130)
+==32340== 
+==32340== 34 bytes in 1 blocks are still reachable in loss record 3 of 7
+==32340==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32340==    by 0x400B06A: _dl_new_object (dl-object.c:161)
+==32340==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32340==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32340==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32340==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32340==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32340==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32340==    by 0x4154BAD: clone (clone.S:130)
+==32340== 
+==32340== 95 bytes in 1 blocks are still reachable in loss record 4 of 7
+==32340==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32340==    by 0x804975E: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32340== 
+==32340== 256 bytes in 1 blocks are still reachable in loss record 5 of 7
+==32340==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32340==    by 0x401046C: _dl_check_map_versions (dl-version.c:300)
+==32340==    by 0x401337A: dl_open_worker (dl-open.c:268)
+==32340==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32340==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32340==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32340==    by 0x4154BAD: clone (clone.S:130)
+==32340== 
+==32340== 630 bytes in 1 blocks are still reachable in loss record 6 of 7
+==32340==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32340==    by 0x400AE1F: _dl_new_object (dl-object.c:77)
+==32340==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32340==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32340==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32340==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32340==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32340==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32340==    by 0x4154BAD: clone (clone.S:130)
+==32340== 
+==32340== 816 bytes in 6 blocks are possibly lost in loss record 7 of 7
+==32340==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32340==    by 0x4011304: allocate_dtv (dl-tls.c:297)
+==32340==    by 0x4011AAB: _dl_allocate_tls (dl-tls.c:461)
+==32340==    by 0x4051470: pthread_create@@GLIBC_2.1 (allocatestack.c:571)
+==32340==    by 0x80494E0: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32340==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32340== 
+==32340== LEAK SUMMARY:
+==32340==    definitely lost: 0 bytes in 0 blocks
+==32340==    indirectly lost: 0 bytes in 0 blocks
+==32340==      possibly lost: 816 bytes in 6 blocks
+==32340==    still reachable: 1,052 bytes in 6 blocks
+==32340==         suppressed: 0 bytes in 0 blocks
+==32340== 
+==32340== For counts of detected and suppressed errors, rerun with: -v
+==32340== Use --track-origins=yes to see where uninitialised values come from
+==32340== ERROR SUMMARY: 17 errors from 6 contexts (suppressed: 0 from 0)
+==32350== Thread 1:
+==32350== 2 bytes in 1 blocks are still reachable in loss record 1 of 7
+==32350==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32350==    by 0x8049778: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32350== 
+==32350== 34 bytes in 1 blocks are still reachable in loss record 2 of 7
+==32350==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32350==    by 0x400542E: local_strdup (dl-load.c:162)
+==32350==    by 0x40085E3: _dl_map_object (dl-load.c:2473)
+==32350==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32350==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32350==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32350==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32350==    by 0x4154BAD: clone (clone.S:130)
+==32350== 
+==32350== 34 bytes in 1 blocks are still reachable in loss record 3 of 7
+==32350==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32350==    by 0x400B06A: _dl_new_object (dl-object.c:161)
+==32350==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32350==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32350==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32350==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32350==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32350==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32350==    by 0x4154BAD: clone (clone.S:130)
+==32350== 
+==32350== 95 bytes in 1 blocks are still reachable in loss record 4 of 7
+==32350==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32350==    by 0x804975E: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32350== 
+==32350== 256 bytes in 1 blocks are still reachable in loss record 5 of 7
+==32350==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32350==    by 0x401046C: _dl_check_map_versions (dl-version.c:300)
+==32350==    by 0x401337A: dl_open_worker (dl-open.c:268)
+==32350==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32350==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32350==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32350==    by 0x4154BAD: clone (clone.S:130)
+==32350== 
+==32350== 630 bytes in 1 blocks are still reachable in loss record 6 of 7
+==32350==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32350==    by 0x400AE1F: _dl_new_object (dl-object.c:77)
+==32350==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32350==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32350==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32350==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32350==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32350==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32350==    by 0x4154BAD: clone (clone.S:130)
+==32350== 
+==32350== 816 bytes in 6 blocks are possibly lost in loss record 7 of 7
+==32350==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32350==    by 0x4011304: allocate_dtv (dl-tls.c:297)
+==32350==    by 0x4011AAB: _dl_allocate_tls (dl-tls.c:461)
+==32350==    by 0x4051470: pthread_create@@GLIBC_2.1 (allocatestack.c:571)
+==32350==    by 0x80494E0: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32350==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32350== 
+==32350== LEAK SUMMARY:
+==32350==    definitely lost: 0 bytes in 0 blocks
+==32350==    indirectly lost: 0 bytes in 0 blocks
+==32350==      possibly lost: 816 bytes in 6 blocks
+==32350==    still reachable: 1,051 bytes in 6 blocks
+==32350==         suppressed: 0 bytes in 0 blocks
+==32350== 
+==32350== For counts of detected and suppressed errors, rerun with: -v
+==32350== Use --track-origins=yes to see where uninitialised values come from
+==32350== ERROR SUMMARY: 27 errors from 6 contexts (suppressed: 0 from 0)
+==32351== Thread 1:
+==32351== 2 bytes in 1 blocks are still reachable in loss record 1 of 7
+==32351==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32351==    by 0x8049778: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32351== 
+==32351== 34 bytes in 1 blocks are still reachable in loss record 2 of 7
+==32351==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32351==    by 0x400542E: local_strdup (dl-load.c:162)
+==32351==    by 0x40085E3: _dl_map_object (dl-load.c:2473)
+==32351==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32351==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32351==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32351==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32351==    by 0x4154BAD: clone (clone.S:130)
+==32351== 
+==32351== 34 bytes in 1 blocks are still reachable in loss record 3 of 7
+==32351==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32351==    by 0x400B06A: _dl_new_object (dl-object.c:161)
+==32351==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32351==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32351==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32351==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32351==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32351==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32351==    by 0x4154BAD: clone (clone.S:130)
+==32351== 
+==32351== 95 bytes in 1 blocks are still reachable in loss record 4 of 7
+==32351==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32351==    by 0x804975E: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32351== 
+==32351== 256 bytes in 1 blocks are still reachable in loss record 5 of 7
+==32351==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32351==    by 0x401046C: _dl_check_map_versions (dl-version.c:300)
+==32351==    by 0x401337A: dl_open_worker (dl-open.c:268)
+==32351==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32351==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32351==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32351==    by 0x4154BAD: clone (clone.S:130)
+==32351== 
+==32351== 630 bytes in 1 blocks are still reachable in loss record 6 of 7
+==32351==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32351==    by 0x400AE1F: _dl_new_object (dl-object.c:77)
+==32351==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32351==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32351==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32351==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32351==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32351==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32351==    by 0x4154BAD: clone (clone.S:130)
+==32351== 
+==32351== 816 bytes in 6 blocks are possibly lost in loss record 7 of 7
+==32351==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32351==    by 0x4011304: allocate_dtv (dl-tls.c:297)
+==32351==    by 0x4011AAB: _dl_allocate_tls (dl-tls.c:461)
+==32351==    by 0x4051470: pthread_create@@GLIBC_2.1 (allocatestack.c:571)
+==32351==    by 0x80494E0: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32351==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32351== 
+==32351== LEAK SUMMARY:
+==32351==    definitely lost: 0 bytes in 0 blocks
+==32351==    indirectly lost: 0 bytes in 0 blocks
+==32351==      possibly lost: 816 bytes in 6 blocks
+==32351==    still reachable: 1,051 bytes in 6 blocks
+==32351==         suppressed: 0 bytes in 0 blocks
+==32351== 
+==32351== For counts of detected and suppressed errors, rerun with: -v
+==32351== Use --track-origins=yes to see where uninitialised values come from
+==32351== ERROR SUMMARY: 28 errors from 6 contexts (suppressed: 0 from 0)
+==32343== Thread 1:
+==32356== Thread 1:
+==32343== 3 bytes in 1 blocks are still reachable in loss record 1 of 7
+==32343==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32343==    by 0x8049778: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32343== 
+==32343== 34 bytes in 1 blocks are still reachable in loss record 2 of 7
+==32343==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32343==    by 0x400542E: local_strdup (dl-load.c:162)
+==32343==    by 0x40085E3: _dl_map_object (dl-load.c:2473)
+==32343==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32343==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32343==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32343==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32343==    by 0x4154BAD: clone (clone.S:130)
+==32343== 
+==32343== 34 bytes in 1 blocks are still reachable in loss record 3 of 7
+==32343==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32343==    by 0x400B06A: _dl_new_object (dl-object.c:161)
+==32343==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32343==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32343==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32343==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32343==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32343==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32343==    by 0x4154BAD: clone (clone.S:130)
+==32343== 
+==32343== 95 bytes in 1 blocks are still reachable in loss record 4 of 7
+==32343==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32343==    by 0x804975E: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32343== 
+==32343== 256 bytes in 1 blocks are still reachable in loss record 5 of 7
+==32343==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32343==    by 0x401046C: _dl_check_map_versions (dl-version.c:300)
+==32343==    by 0x401337A: dl_open_worker (dl-open.c:268)
+==32343==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32343==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32343==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32343==    by 0x4154BAD: clone (clone.S:130)
+==32343== 
+==32343== 630 bytes in 1 blocks are still reachable in loss record 6 of 7
+==32343==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32343==    by 0x400AE1F: _dl_new_object (dl-object.c:77)
+==32343==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32343==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32343==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32343==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32343==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32343==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32343==    by 0x4154BAD: clone (clone.S:130)
+==32343== 
+==32343== 816 bytes in 6 blocks are possibly lost in loss record 7 of 7
+==32343==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32343==    by 0x4011304: allocate_dtv (dl-tls.c:297)
+==32343==    by 0x4011AAB: _dl_allocate_tls (dl-tls.c:461)
+==32343==    by 0x4051470: pthread_create@@GLIBC_2.1 (allocatestack.c:571)
+==32343==    by 0x80494E0: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32343==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32343== 
+==32343== LEAK SUMMARY:
+==32343==    definitely lost: 0 bytes in 0 blocks
+==32343==    indirectly lost: 0 bytes in 0 blocks
+==32343==      possibly lost: 816 bytes in 6 blocks
+==32343==    still reachable: 1,052 bytes in 6 blocks
+==32343==         suppressed: 0 bytes in 0 blocks
+==32343== 
+==32343== For counts of detected and suppressed errors, rerun with: -v
+==32343== Use --track-origins=yes to see where uninitialised values come from
+==32343== ERROR SUMMARY: 20 errors from 6 contexts (suppressed: 0 from 0)
+==32356== 2 bytes in 1 blocks are still reachable in loss record 1 of 7
+==32356==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32356==    by 0x8049778: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32356== 
+==32356== 34 bytes in 1 blocks are still reachable in loss record 2 of 7
+==32356==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32356==    by 0x400542E: local_strdup (dl-load.c:162)
+==32356==    by 0x40085E3: _dl_map_object (dl-load.c:2473)
+==32356==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32356==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32356==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32356==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32356==    by 0x4154BAD: clone (clone.S:130)
+==32356== 
+==32356== 34 bytes in 1 blocks are still reachable in loss record 3 of 7
+==32356==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32356==    by 0x400B06A: _dl_new_object (dl-object.c:161)
+==32356==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32356==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32356==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32356==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32356==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32356==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32356==    by 0x4154BAD: clone (clone.S:130)
+==32356== 
+==32356== 95 bytes in 1 blocks are still reachable in loss record 4 of 7
+==32356==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32356==    by 0x804975E: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32356== 
+==32356== 256 bytes in 1 blocks are still reachable in loss record 5 of 7
+==32356==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32356==    by 0x401046C: _dl_check_map_versions (dl-version.c:300)
+==32356==    by 0x401337A: dl_open_worker (dl-open.c:268)
+==32356==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32356==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32356==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32356==    by 0x4154BAD: clone (clone.S:130)
+==32356== 
+==32356== 630 bytes in 1 blocks are still reachable in loss record 6 of 7
+==32356==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32356==    by 0x400AE1F: _dl_new_object (dl-object.c:77)
+==32356==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32356==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32356==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32356==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32356==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32356==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32356==    by 0x4154BAD: clone (clone.S:130)
+==32356== 
+==32356== 816 bytes in 6 blocks are possibly lost in loss record 7 of 7
+==32356==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32356==    by 0x4011304: allocate_dtv (dl-tls.c:297)
+==32356==    by 0x4011AAB: _dl_allocate_tls (dl-tls.c:461)
+==32356==    by 0x4051470: pthread_create@@GLIBC_2.1 (allocatestack.c:571)
+==32356==    by 0x80494E0: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32356==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32356== 
+==32356== LEAK SUMMARY:
+==32356==    definitely lost: 0 bytes in 0 blocks
+==32356==    indirectly lost: 0 bytes in 0 blocks
+==32356==      possibly lost: 816 bytes in 6 blocks
+==32356==    still reachable: 1,051 bytes in 6 blocks
+==32356==         suppressed: 0 bytes in 0 blocks
+==32356== 
+==32356== For counts of detected and suppressed errors, rerun with: -v
+==32356== Use --track-origins=yes to see where uninitialised values come from
+==32356== ERROR SUMMARY: 33 errors from 6 contexts (suppressed: 0 from 0)
+==32355== Thread 1:
+==32353== Thread 1:
+==32353== 2 bytes in 1 blocks are still reachable in loss record 1 of 7
+==32353==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32353==    by 0x8049778: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32353== 
+==32353== 34 bytes in 1 blocks are still reachable in loss record 2 of 7
+==32353==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32353==    by 0x400542E: local_strdup (dl-load.c:162)
+==32353==    by 0x40085E3: _dl_map_object (dl-load.c:2473)
+==32353==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32353==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32353==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32353==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32353==    by 0x4154BAD: clone (clone.S:130)
+==32353== 
+==32353== 34 bytes in 1 blocks are still reachable in loss record 3 of 7
+==32353==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32353==    by 0x400B06A: _dl_new_object (dl-object.c:161)
+==32353==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32353==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32353==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32353==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32353==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32353==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32353==    by 0x4154BAD: clone (clone.S:130)
+==32353== 
+==32353== 95 bytes in 1 blocks are still reachable in loss record 4 of 7
+==32353==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32353==    by 0x804975E: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32353== 
+==32353== 256 bytes in 1 blocks are still reachable in loss record 5 of 7
+==32353==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32353==    by 0x401046C: _dl_check_map_versions (dl-version.c:300)
+==32353==    by 0x401337A: dl_open_worker (dl-open.c:268)
+==32353==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32353==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32353==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32355== 2 bytes in 1 blocks are still reachab==32353== 
+==32353== 630 bytes in 1 blocks are still reachable in loss record 6 of 7
+==32353==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32353==    by 0x400AE1F: _dl_new_object (dl-object.c:77)
+==32353==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32353==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32353==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32353==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32353==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32353==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32353==    by 0x4154BAD: clone (clone.S:130)
+==32353== 
+==32353== 816 bytes in 6 blocks are possibly lost in loss record 7 of 7
+==32353==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32353==    by 0x4011304: allocate_dtv (dl-tls.c:297)
+==32353==    by 0x4011AAB: _dl_allocate_tls (dl-tls.c:461)
+==32353==    by 0x4051470: pthread_create@@GLIBC_2.1 (allocatestack.c:571)
+==32353==    by 0x80494E0: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32353==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32353== 
+==32353== LEAK SUMMARY:
+==32353==    definitely lost: 0 bytes in 0 blocks
+==32353==    indirectly lost: 0 bytes in 0 blocks
+==32353==      possibly lost: 816 bytes in 6 blocks
+==32353==    still reachable: 1,051 bytes in 6 blocks
+==32353==         suppressed: 0 bytes in 0 blocks
+==32353== 
+==32353== For counts of detected and suppressed errors, rerun with: -v
+==32353== Use --track-origins=yes to see where uninitialised values come from
+==32353== ERROR SUMMARY: 30 errors from 6 contexts (suppressed: 0 from 0)
+==32348== Thread 1:
+==32348== 3 bytes in 1 blocks are still reachable in loss record 1 of 7
+==32348==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32348==    by 0x8049778: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32348== 
+==32348== 34 bytes in 1 blocks are still reachable in loss record 2 of 7
+==32348==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32348==    by 0x400542E: local_strdup (dl-load.c:162)
+==32348==    by 0x40085E3: _dl_map_object (dl-load.c:2473)
+==32348==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32348==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32348==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32348==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32348==    by 0x4154BAD: clone (clone.S:130)
+==32348== 
+==32348== 34 bytes in 1 blocks are still reachable in loss record 3 of 7
+==32348==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32348==    by 0x400B06A: _dl_new_object (dl-object.c:161)
+==32348==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32348==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32348==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32348==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32348==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32348==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32348==    by 0x4154BAD: clone (clone.S:130)
+==32348== 
+==32348== 95 bytes in 1 blocks are still reachable in loss record 4 of 7
+==32348==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32348==    by 0x804975E: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32348== 
+==32348== 256 bytes in 1 blocks are still reachable in loss record 5 of 7
+==32348==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32348==    by 0x401046C: _dl_check_map_versions (dl-version.c:300)
+==32348==    by 0x401337A: dl_open_worker (dl-open.c:268)
+==32348==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32348==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32348==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32348==    by 0x4154BAD: clone (clone.S:130)
+==32348== 
+==32348== 630 bytes in 1 blocks are still reachable in loss record 6 of 7
+==32348==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32348==    by 0x400AE1F: _dl_new_object (dl-object.c:77)
+==32348==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32348==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32348==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32348==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32348==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32348==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32348==    by 0x4154BAD: clone (clone.S:130)
+==32348== 
+==32348== 816 bytes in 6 blocks are possibly lost in loss record 7 of 7
+==32348==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32348==    by 0x4011304: allocate_dtv (dl-tls.c:297)
+==32348==    by 0x4011AAB: _dl_allocate_tls (dl-tls.c:461)
+==32348==    by 0x4051470: pthread_create@@GLIBC_2.1 (allocatestack.c:571)
+==32348==    by 0x80494E0: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32348==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32348== 
+==32348== LEAK SUMMARY:
+==32348==    definitely lost: 0 bytes in 0 blocks
+==32348==    indirectly lost: 0 bytes in 0 blocks
+==32348==      possibly lost: 816 bytes in 6 blocks
+==32348==    still reachable: 1,052 bytes in 6 blocks
+==32348==         suppressed: 0 bytes in 0 blocks
+==32348== 
+==32348== For counts of detected and suppressed errors, rerun with: -v
+==32348== Use --track-origins=yes to see where uninitialised values come from
+==32348== ERROR SUMMARY: 25 errors from 6 contexts (suppressed: 0 from 0)
+==32352== Thread 1:
+==32352== 2 bytes in 1 blocks are still reachable in loss record 1 of 7
+==32352==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32352==    by 0x8049778: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32352== 
+==32352== 34 bytes in 1 blocks are still reachable in loss record 2 of 7
+==32352==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32352==    by 0x400542E: local_strdup (dl-load.c:162)
+==32352==    by 0x40085E3: _dl_map_object (dl-load.c:2473)
+==32352==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32352==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32352==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32352==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32352==    by 0x4154BAD: clone (clone.S:130)
+==32352== 
+==32352== 34 bytes in 1 blocks are still reachable in loss record 3 of 7
+==32352==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32352==    by 0x400B06A: _dl_new_object (dl-object.c:161)
+==32352==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32352==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32352==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32352==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32352==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32352==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32352==    by 0x4154BAD: clone (clone.S:130)
+==32352== 
+==32352== 95 bytes in 1 blocks are still reachable in loss record 4 of 7
+==32352==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32352==    by 0x804975E: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32352== 
+==32352== 256 bytes in 1 blocks are still reachable in loss record 5 of 7
+==32352==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32352==    by 0x401046C: _dl_check_map_versions (dl-version.c:300)
+==32352==    by 0x401337A: dl_open_worker (dl-open.c:268)
+==32352==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32352==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32352==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32352==    by 0x4154BAD: clone (clone.S:130)
+==32352== 
+==32352== 630 bytes in 1 blocks are still reachable in loss record 6 of 7
+==32352==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32352==    by 0x400AE1F: _dl_new_object (dl-object.c:77)
+==32352==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32352==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32352==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32352==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32352==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32352==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32352==    by 0x4154BAD: clone (clone.S:130)
+==32352== 
+==32352== 816 bytes in 6 blocks are possibly lost in loss record 7 of 7
+==32352==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32352==    by 0x4011304: allocate_dtv (dl-tls.c:297)
+==32352==    by 0x4011AAB: _dl_allocate_tls (dl-tls.c:461)
+==32352==    by 0x4051470: pthread_create@@GLIBC_2.1 (allocatestack.c:571)
+==32352==    by 0x80494E0: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32352==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32352== 
+==32352== LEAK SUMMARY:
+==32352==    definitely lost: 0 bytes in 0 blocks
+==32352==    indirectly lost: 0 bytes in 0 blocks
+==32352==      possibly lost: 816 bytes in 6 blocks
+==32352==    still reachable: 1,051 bytes in 6 blocks
+==32352==         suppressed: 0 bytes in 0 blocks
+==32352== 
+==32352== For counts of detected and suppressed errors, rerun with: -v
+==32352== Use --track-origins=yes to see where uninitialised values come from
+==32352== ERROR SUMMARY: 29 errors from 6 contexts (suppressed: 0 from 0)
+==32357== Thread 1:
+==32357== 2 bytes in 1 blocks are still reachable in loss record 1 of 7
+==32357==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32357==    by 0x8049778: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32357== 
+==32357== 34 bytes in 1 blocks are still reachable in loss record 2 of 7
+==32357==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32357==    by 0x400542E: local_strdup (dl-load.c:162)
+==32357==    by 0x40085E3: _dl_map_object (dl-load.c:2473)
+==32357==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32357==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32357==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32357==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32357==    by 0x4154BAD: clone (clone.S:130)
+==32357== 
+==32357== 34 bytes in 1 blocks are still reachable in loss record 3 of 7
+==32357==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32357==    by 0x400B06A: _dl_new_object (dl-object.c:161)
+==32357==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32357==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32357==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32357==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32357==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32357==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32357==    by 0x4154BAD: clone (clone.S:130)
+==32357== 
+==32357== 95 bytes in 1 blocks are still reachable in loss record 4 of 7
+==32357==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32357==    by 0x804975E: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32357== 
+==32357== 256 bytes in 1 blocks are still reachable in loss record 5 of 7
+==32357==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32357==    by 0x401046C: _dl_check_map_versions (dl-version.c:300)
+==32357==    by 0x401337A: dl_open_worker (dl-open.c:268)
+==32357==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32357==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32357==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32357==    by 0x4154BAD: clone (clone.S:130)
+==32357== 
+==32357== 630 bytes in 1 blocks are still reachable in loss record 6 of 7
+==32357==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32357==    by 0x400AE1F: _dl_new_object (dl-object.c:77)
+==32357==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32357==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32357==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32357==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32357==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32357==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32357==    by 0x4154BAD: clone (clone.S:130)
+==32357== 
+==32357== 816 bytes in 6 blocks are possibly lost in loss record 7 of 7
+==32357==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32357==    by 0x4011304: allocate_dtv (dl-tls.c:297)
+==32357==    by 0x4011AAB: _dl_allocate_tls (dl-tls.c:461)
+==32357==    by 0x4051470: pthread_create@@GLIBC_2.1 (allocatestack.c:571)
+==32357==    by 0x80494E0: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32357==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32357== 
+==32357== LEAK SUMMARY:
+==32357==    definitely lost: 0 bytes in 0 blocks
+==32357==    indirectly lost: 0 bytes in 0 blocks
+==32357==      possibly lost: 816 bytes in 6 blocks
+==32357==    still reachable: 1,051 bytes in 6 blocks
+==32357==         suppressed: 0 bytes in 0 blocks
+==32357== 
+==32349== Thread 1:
+==32357== For counts of detected and suppressed errors, rerun with: -v
+==32357== Use --track-origins=yes to see where uninitialised values come from
+==32357== ERROR SUMMARY: 34 errors from 6 contexts (suppressed: 0 from 0)
+==32349== 2 bytes in 1 blocks are still reachable in loss record 1 of 7
+==32349==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32349==    by 0x8049778: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32349== 
+==32349== 34 bytes in 1 blocks are still reachable in loss record 2 of 7
+==32349==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32349==    by 0x400542E: local_strdup (dl-load.c:162)
+==32349==    by 0x40085E3: _dl_map_object (dl-load.c:2473)
+==32349==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32349==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32349==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32349==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32349==    by 0x4154BAD: clone (clone.S:130)
+==32349== 
+==32349== 34 bytes in 1 blocks are still reachable in loss record 3 of 7
+==32349==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32349==    by 0x400B06A: _dl_new_object (dl-object.c:161)
+==32349==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32349==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32349==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32349==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32349==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32349==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32349==    by 0x4154BAD: clone (clone.S:130)
+==32349== 
+==32349== 95 bytes in 1 blocks are still reachable in loss record 4 of 7
+==32349==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32349==    by 0x804975E: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32349== 
+==32349== 256 bytes in 1 blocks are still reachable in loss record 5 of 7
+==32349==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32349==    by 0x401046C: _dl_check_map_versions (dl-version.c:300)
+==32349==    by 0x401337A: dl_open_worker (dl-open.c:268)
+==32349==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32349==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32349==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32349==    by 0x4154BAD: clone (clone.S:130)
+==32349== 
+==32349== 630 bytes in 1 blocks are still reachable in loss record 6 of 7
+==32349==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32349==    by 0x400AE1F: _dl_new_object (dl-object.c:77)
+==32349==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32349==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32349==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32349==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32349==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32349==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32349==    by 0x4154BAD: clone (clone.S:130)
+==32349== 
+==32349== 816 bytes in 6 blocks are possibly lost in loss record 7 of 7
+==32349==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32349==    by 0x4011304: allocate_dtv (dl-tls.c:297)
+==32349==    by 0x4011AAB: _dl_allocate_tls (dl-tls.c:461)
+==32349==    by 0x4051470: pthread_create@@GLIBC_2.1 (allocatestack.c:571)
+==32349==    by 0x80494E0: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32349==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32349== 
+==32349== LEAK SUMMARY:
+==32349==    definitely lost: 0 bytes in 0 blocks
+==32349==    indirectly lost: 0 bytes in 0 blocks
+==32349==      possibly lost: 816 bytes in 6 blocks
+==32349==    still reachable: 1,051 bytes in 6 blocks
+==32349==         suppressed: 0 bytes in 0 blocks
+==32349== 
+==32349== For counts of detected and suppressed errors, rerun with: -v
+==32349== Use --track-origins=yes to see where uninitialised values come from
+==32349== ERROR SUMMARY: 26 errors from 6 contexts (suppressed: 0 from 0)
+==32358== Thread 1:
+==32358== 2 bytes in 1 blocks are still reachable in loss record 1 of 7
+==32358==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32358==    by 0x8049778: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32358== 
+==32358== 34 bytes in 1 blocks are still reachable in loss record 2 of 7
+==32358==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32358==    by 0x400542E: local_strdup (dl-load.c:162)
+==32358==    by 0x40085E3: _dl_map_object (dl-load.c:2473)
+==32358==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32358==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32358==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32358==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32358==    by 0x4154BAD: clone (clone.S:130)
+==32358== 
+==32358== 34 bytes in 1 blocks are still reachable in loss record 3 of 7
+==32358==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32358==    by 0x400B06A: _dl_new_object (dl-object.c:161)
+==32358==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32358==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32358==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32358==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32358==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32358==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32358==    by 0x4154BAD: clone (clone.S:130)
+==32358== 
+==32358== 95 bytes in 1 blocks are still reachable in loss record 4 of 7
+==32358==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32358==    by 0x804975E: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32358== 
+==32358== 256 bytes in 1 blocks are still reachable in loss record 5 of 7
+==32358==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32358==    by 0x401046C: _dl_check_map_versions (dl-version.c:300)
+==32358==    by 0x401337A: dl_open_worker (dl-open.c:268)
+==32358==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32358==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32358==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32358==    by 0x4154BAD: clone (clone.S:130)
+==32358== 
+==32358== 630 bytes in 1 blocks are still reachable in loss record 6 of 7
+==32358==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32358==    by 0x400AE1F: _dl_new_object (dl-object.c:77)
+==32358==    by 0x4006447: _dl_map_object_from_fd (dl-load.c:1051)
+==32358==    by 0x40083AF: _dl_map_object (dl-load.c:2568)
+==32358==    by 0x4012D6C: dl_open_worker (dl-open.c:225)
+==32358==    by 0x400ECCE: _dl_catch_error (dl-error.c:178)
+==32358==    by 0x418DE20: do_dlopen (dl-libc.c:89)
+==32358==    by 0x4050D4B: start_thread (pthread_create.c:308)
+==32358==    by 0x4154BAD: clone (clone.S:130)
+==32358== 
+==32358== 816 bytes in 6 blocks are possibly lost in loss record 7 of 7
+==32358==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32358==    by 0x4011304: allocate_dtv (dl-tls.c:297)
+==32358==    by 0x4011AAB: _dl_allocate_tls (dl-tls.c:461)
+==32358==    by 0x4051470: pthread_create@@GLIBC_2.1 (allocatestack.c:571)
+==32358==    by 0x80494E0: mainChild (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32358==    by 0x80498F6: main (in /home/priyank/Desktop/multi-threaded-keyword-search/BlackBoxOriginal/BlackBoxTesting/ks_bb)
+==32358== 
+==32358== LEAK SUMMARY:
+==32358==    definitely lost: 0 bytes in 0 blocks
+==32358==    indirectly lost: 0 bytes in 0 blocks
+==32358==      possibly lost: 816 bytes in 6 blocks
+==32358==    still reachable: 1,051 bytes in 6 blocks
+==32358==         suppressed: 0 bytes in 0 blocks
+==32358== 
+==32358== For counts of detected and suppressed errors, rerun with: -v
+==32358== Use --track-origins=yes to see where uninitialised values come from
+==32358== ERROR SUMMARY: 35 errors from 6 contexts (suppressed: 0 from 0)
+==32336== Invalid read of size 4
+==32336==    at 0x40D8C06: _IO_flush_all_lockp (genops.c:842)
+==32336==    by 0x40D8D8D: _IO_cleanup (genops.c:1010)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210090 is 104 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8CF8: _IO_flush_all_lockp (genops.c:842)
+==32336==    by 0x40D8D8D: _IO_cleanup (genops.c:1010)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210038 is 16 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8CFB: _IO_flush_all_lockp (genops.c:842)
+==32336==    by 0x40D8D8D: _IO_cleanup (genops.c:1010)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x421003c is 20 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 1
+==32336==    at 0x40D8C11: _IO_flush_all_lockp (genops.c:844)
+==32336==    by 0x40D8D8D: _IO_cleanup (genops.c:1010)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x421006e is 70 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8CA0: _IO_flush_all_lockp (genops.c:863)
+==32336==    by 0x40D8D8D: _IO_cleanup (genops.c:1010)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x421005c is 52 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8DA8: _IO_cleanup (genops.c:953)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210028 is 0 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8DBC: _IO_cleanup (genops.c:957)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210090 is 104 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8DC5: _IO_cleanup (genops.c:962)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210070 is 72 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8DCC: _IO_cleanup (genops.c:962)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x42100c8 is 160 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8DE7: _IO_cleanup (genops.c:962)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x42100c0 is 152 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8DEE: _IO_cleanup (genops.c:962)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210070 is 72 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D8DF1: _IO_cleanup (genops.c:962)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x42100c8 is 160 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D8DF4: _IO_cleanup (genops.c:962)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x42100c4 is 156 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8E04: _IO_cleanup (genops.c:969)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210028 is 0 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8E6B: _IO_cleanup (genops.c:975)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210044 is 28 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D8E6E: _IO_cleanup (genops.c:971)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210028 is 0 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D8E7C: _IO_cleanup (genops.c:975)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210088 is 96 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D8E7F: _IO_cleanup (genops.c:973)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210084 is 92 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8E82: _IO_cleanup (genops.c:976)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210048 is 32 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D8E87: _IO_cleanup (genops.c:976)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x421008c is 100 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 1
+==32336==    at 0x40D8E0A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x421006e is 70 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8E0E: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x42100bc is 148 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 1
+==32336==    at 0x40D863F: _IO_default_setbuf (genops.c:563)
+==32336==    by 0x40D6331: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:467)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x421006e is 70 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D864E: _IO_default_setbuf (genops.c:563)
+==32336==    by 0x40D6331: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:467)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x42100bc is 148 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D6224: _IO_file_sync@@GLIBC_2.1 (fileops.c:917)
+==32336==    by 0x40D865A: _IO_default_setbuf (genops.c:563)
+==32336==    by 0x40D6331: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:467)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x421003c is 20 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D6227: _IO_file_sync@@GLIBC_2.1 (fileops.c:917)
+==32336==    by 0x40D865A: _IO_default_setbuf (genops.c:563)
+==32336==    by 0x40D6331: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:467)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210038 is 16 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D6265: _IO_file_sync@@GLIBC_2.1 (fileops.c:919)
+==32336==    by 0x40D865A: _IO_default_setbuf (genops.c:563)
+==32336==    by 0x40D6331: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:467)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x421002c is 4 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D6268: _IO_file_sync@@GLIBC_2.1 (fileops.c:920)
+==32336==    by 0x40D865A: _IO_default_setbuf (genops.c:563)
+==32336==    by 0x40D6331: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:467)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210030 is 8 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D626D: _IO_file_sync@@GLIBC_2.1 (fileops.c:937)
+==32336==    by 0x40D865A: _IO_default_setbuf (genops.c:563)
+==32336==    by 0x40D6331: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:467)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210074 is 76 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D6276: _IO_file_sync@@GLIBC_2.1 (fileops.c:937)
+==32336==    by 0x40D865A: _IO_default_setbuf (genops.c:563)
+==32336==    by 0x40D6331: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:467)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210078 is 80 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D866C: _IO_default_setbuf (genops.c:567)
+==32336==    by 0x40D6331: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:467)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210028 is 0 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D833A: _IO_setb (genops.c:405)
+==32336==    by 0x40D868C: _IO_default_setbuf (genops.c:568)
+==32336==    by 0x40D6331: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:467)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210044 is 28 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D834A: _IO_setb (genops.c:407)
+==32336==    by 0x40D868C: _IO_default_setbuf (genops.c:568)
+==32336==    by 0x40D6331: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:467)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210044 is 28 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D8351: _IO_setb (genops.c:408)
+==32336==    by 0x40D868C: _IO_default_setbuf (genops.c:568)
+==32336==    by 0x40D6331: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:467)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210048 is 32 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D835C: _IO_setb (genops.c:412)
+==32336==    by 0x40D868C: _IO_default_setbuf (genops.c:568)
+==32336==    by 0x40D6331: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:467)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210028 is 0 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D868D: _IO_default_setbuf (genops.c:575)
+==32336==    by 0x40D6331: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:467)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210040 is 24 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D8694: _IO_default_setbuf (genops.c:575)
+==32336==    by 0x40D6331: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:467)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x421003c is 20 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D869B: _IO_default_setbuf (genops.c:575)
+==32336==    by 0x40D6331: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:467)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210038 is 16 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D86A2: _IO_default_setbuf (genops.c:576)
+==32336==    by 0x40D6331: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:467)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210030 is 8 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D86A9: _IO_default_setbuf (genops.c:576)
+==32336==    by 0x40D6331: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:467)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x421002c is 4 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D86B0: _IO_default_setbuf (genops.c:576)
+==32336==    by 0x40D6331: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:467)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210034 is 12 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D6336: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:471)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210044 is 28 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D6339: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:471)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210040 is 24 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D633C: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:470)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x421003c is 20 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D633F: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:470)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210038 is 16 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D6342: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:472)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210034 is 12 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D6345: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:472)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x421002c is 4 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D6348: _IO_file_setbuf@@GLIBC_2.1 (fileops.c:472)
+==32336==    by 0x40D8E2A: _IO_cleanup (genops.c:979)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210030 is 8 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8E90: _IO_cleanup (genops.c:981)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210070 is 72 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8E97: _IO_cleanup (genops.c:982)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x42100c4 is 156 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D8E9F: _IO_cleanup (genops.c:982)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x42100c4 is 156 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D8EA4: _IO_cleanup (genops.c:982)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x42100c8 is 160 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8EB6: _IO_cleanup (genops.c:982)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x42100c0 is 152 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D8E30: _IO_cleanup (genops.c:987)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x4210090 is 104 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8E37: _IO_cleanup (genops.c:951)
+==32336==    by 0x4097F91: __run_exit_handlers (exit.c:91)
+==32336==    by 0x4097FDC: exit (exit.c:100)
+==32336==    by 0x407E4DA: (below main) (libc-start.c:258)
+==32336==  Address 0x421005c is 52 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8C06: _IO_flush_all_lockp (genops.c:842)
+==32336==    by 0x40D8D8D: _IO_cleanup (genops.c:1010)
+==32336==    by 0x411E0B7: _Exit (_exit.S:30)
+==32336==  Address 0x4210090 is 104 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8CF8: _IO_flush_all_lockp (genops.c:842)
+==32336==    by 0x40D8D8D: _IO_cleanup (genops.c:1010)
+==32336==    by 0x411E0B7: _Exit (_exit.S:30)
+==32336==  Address 0x4210038 is 16 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8CFB: _IO_flush_all_lockp (genops.c:842)
+==32336==    by 0x40D8D8D: _IO_cleanup (genops.c:1010)
+==32336==    by 0x411E0B7: _Exit (_exit.S:30)
+==32336==  Address 0x421003c is 20 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 1
+==32336==    at 0x40D8C11: _IO_flush_all_lockp (genops.c:844)
+==32336==    by 0x40D8D8D: _IO_cleanup (genops.c:1010)
+==32336==    by 0x411E0B7: _Exit (_exit.S:30)
+==32336==  Address 0x421006e is 70 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8CA0: _IO_flush_all_lockp (genops.c:863)
+==32336==    by 0x40D8D8D: _IO_cleanup (genops.c:1010)
+==32336==    by 0x411E0B7: _Exit (_exit.S:30)
+==32336==  Address 0x421005c is 52 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8DA8: _IO_cleanup (genops.c:953)
+==32336==    by 0x41B1CE0: __libc_freeres (in /lib/i386-linux-gnu/libc-2.15.so)
+==32336==    by 0x411E0B7: _Exit (_exit.S:30)
+==32336==  Address 0x4210028 is 0 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid write of size 4
+==32336==    at 0x40D8E30: _IO_cleanup (genops.c:987)
+==32336==    by 0x41B1CE0: __libc_freeres (in /lib/i386-linux-gnu/libc-2.15.so)
+==32336==    by 0x411E0B7: _Exit (_exit.S:30)
+==32336==  Address 0x4210090 is 104 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x40D8E37: _IO_cleanup (genops.c:951)
+==32336==    by 0x41B1CE0: __libc_freeres (in /lib/i386-linux-gnu/libc-2.15.so)
+==32336==    by 0x411E0B7: _Exit (_exit.S:30)
+==32336==  Address 0x421005c is 52 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x41B1C30: buffer_free (in /lib/i386-linux-gnu/libc-2.15.so)
+==32336==    by 0x411E0B7: _Exit (_exit.S:30)
+==32336==  Address 0x421008c is 100 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x41B1C43: buffer_free (in /lib/i386-linux-gnu/libc-2.15.so)
+==32336==    by 0x411E0B7: _Exit (_exit.S:30)
+==32336==  Address 0x4210088 is 96 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== Invalid read of size 4
+==32336==    at 0x41B1C54: buffer_free (in /lib/i386-linux-gnu/libc-2.15.so)
+==32336==    by 0x411E0B7: _Exit (_exit.S:30)
+==32336==  Address 0x4210084 is 92 bytes inside a block of size 352 free'd
+==32336==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==32336==    by 0x40CA423: fclose@@GLIBC_2.1 (iofclose.c:88)
+==32336==    by 0x407E4D2: (below main) (libc-start.c:226)
+==32336== 
+==32336== 
+==32336== HEAP SUMMARY:
+==32336==     in use at exit: 0 bytes in 0 blocks
+==32336==   total heap usage: 42 allocs, 42 frees, 3,327 bytes allocated
+==32336== 
+==32336== All heap blocks were freed -- no leaks are possible
+==32336== 
+==32336== For counts of detected and suppressed errors, rerun with: -v
+==32336== ERROR SUMMARY: 90 errors from 67 contexts (suppressed: 0 from 0)
